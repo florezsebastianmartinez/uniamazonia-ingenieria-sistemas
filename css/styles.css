@@ -1,0 +1,64 @@
+/* Colores tomados del sitio original de la Universidad */
+:root{
+    --verde: #0d810d;
+    --verde-oscuro: #005900;
+    --rojo: #c00909;
+    --gris: #f8f7f7;
+    --texto: #333333;
+}
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{ font-family: 'Open Sans', sans-serif; font-size: 15px; color: var(--texto); line-height: 1.7; }
+a{ color: var(--verde); }
+a:hover{ color: var(--rojo); }
+
+/* Ancho máximo centrado, común a todas las secciones */
+.contenedor{ width: 92%; max-width: 1100px; margin: 0 auto; }
+
+/* ---------- Cabecera ---------- */
+.cabecera{ background: white; padding: 20px 0; text-align: center; }
+.logo{ max-width: 100%; height: auto; }
+
+/* ---------- Menú (flex, Clase 4) ---------- */
+.menu{ background: var(--gris); border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; position: sticky; top: 0; z-index: 10; }
+.menu-fila{ display: flex; flex-wrap: wrap; }
+.menu a{ color: var(--texto); text-decoration: none; text-transform: uppercase; padding: 12px 18px; transition: 0.3s; }
+.menu a:hover, .menu a.activo{ background: var(--verde); color: white; }
+
+/* ---------- Franja decorativa ---------- */
+.franja{ height: 80px; background: var(--verde-oscuro) url(../img/franja.jpg) center / cover no-repeat; }
+
+/* ---------- Contenido ---------- */
+.ruta{ font-size: 0.85rem; color: #777; margin: 15px 0 25px; }
+h1{ font-size: 1.7rem; font-weight: 400; text-transform: uppercase; margin-bottom: 20px; }
+.banner{ display: block; width: 100%; height: auto; margin-bottom: 25px; }
+
+/* Datos del programa: grid de 2 columnas (etiqueta | valor) */
+.datos{ display: grid; grid-template-columns: max-content 1fr; gap: 6px 12px; margin-bottom: 30px; }
+.datos dt{ font-weight: 700; }
+
+/* ---------- Acordeón: ícono + y − en lugar de la flecha ---------- */
+.accordion{ margin-bottom: 50px; }
+.accordion-button{ font-size: 1.05rem; color: var(--texto); background: white; box-shadow: none; }
+.accordion-button:not(.collapsed){ color: var(--verde-oscuro); background: var(--gris); box-shadow: none; }
+.accordion-button:focus{ box-shadow: 0 0 0 3px rgba(13, 129, 13, 0.3); }
+.accordion-button::after, .accordion-button:not(.collapsed)::after{ content: "+"; background-image: none; transform: none; width: auto; height: auto; font-size: 1.4rem; font-weight: 700; }
+.accordion-button:not(.collapsed)::after{ content: "−"; }
+.accordion-body h3{ font-size: 1.05rem; font-weight: 700; color: var(--verde-oscuro); margin: 10px 0 4px; }
+.accordion-body p, .accordion-body li{ text-align: justify; }
+
+/* ---------- Pie de página ---------- */
+.pie{ background: var(--gris); padding: 35px 0; border-top: 3px solid var(--verde); }
+.pie h2{ font-size: 1.4rem; font-weight: 700; color: var(--verde); text-transform: uppercase; }
+.pie h3{ font-size: 1rem; font-weight: 700; color: var(--rojo); margin-bottom: 8px; }
+.pie-grid{ display: grid; grid-template-columns: 1fr 1.5fr 1fr; gap: 25px; margin-top: 20px; }
+.fuente{ margin-top: 25px; font-size: 0.85rem; color: #666; text-align: center; }
+
+/* ---------- Responsive (Clase 5): en celular todo en una columna ---------- */
+@media (max-width: 768px){
+    .pie-grid{ grid-template-columns: 1fr; }
+    .datos{ grid-template-columns: 1fr; gap: 0; }
+    .datos dd{ margin-bottom: 10px; }
+    .menu a{ padding: 10px 12px; font-size: 0.85rem; }
+}
+@media (prefers-reduced-motion: reduce){ *{ transition: none !important; scroll-behavior: auto !important; } }
