@@ -1,146 +1,444 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ingeniería de Sistemas | Universidad de la Amazonia</title>
-    <meta name="description" content="Información del programa de Ingeniería de Sistemas de la Universidad de la Amazonia, Florencia, Caquetá.">
-    <!-- Open Sans: la misma fuente del sitio original -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap (Clase 7) y AOS (Clase 8) -->
+    <meta name="description"
+        content="Información del programa de Ingeniería de Sistemas de la Universidad de la Amazonia, Florencia, Caquetá.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <!-- ===== CABECERA: logo de la universidad ===== -->
+
     <header id="inicio" class="cabecera">
         <div class="contenedor">
             <img src="./img/logo.jpg" alt="Universidad de la Amazonia, vigilada Mineducación" class="logo">
         </div>
     </header>
 
-    <!-- ===== MENÚ: barra gris, opción activa en verde (como el original) ===== -->
+
     <nav class="menu" aria-label="Menú principal">
         <div class="contenedor menu-fila">
             <a href="https://www.uniamazonia.edu.co/">Inicio</a>
             <a href="#datos" class="activo">Programa</a>
             <a href="#informacion">Información académica</a>
+            <a href="#plan">Plan de estudios</a>
             <a href="#contacto">Contacto</a>
         </div>
     </nav>
 
-    <!-- Franja decorativa de flores del sitio original -->
+
     <div class="franja" role="img" aria-label="Flores de la Amazonia"></div>
 
-    <main class="contenedor">
-        <!-- Ruta de navegación (breadcrumb) -->
-        <p class="ruta">
-            <a href="https://www.uniamazonia.edu.co/">Inicio</a> / Programas /
-            <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado.html">Pregrado</a> /
-            <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria.html">Ingeniería</a> /
-            Ingeniería de Sistemas
-        </p>
+    <main>
 
-        <h1>Ingeniería de Sistemas</h1>
+        <div class="contenedor">
+            <p class="ruta">
+                <a href="https://www.uniamazonia.edu.co/">Inicio</a> / Programas /
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado.html">Pregrado</a> /
+                <a
+                    href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria.html">Ingeniería</a>
+                /
+                Ingeniería de Sistemas
+            </p>
+
+            <h1>Ingeniería de Sistemas</h1>
+        </div>
         <img src="./img/banner.jpg" alt="Programa Ingeniería de Sistemas, Universidad de la Amazonia" class="banner">
 
-        <!-- ===== DATOS DEL PROGRAMA: lista de definición con grid ===== -->
-        <section id="datos" data-aos="fade-up">
-            <dl class="datos">
-                <dt>Título que otorga:</dt><dd>Ingeniero de Sistemas</dd>
-                <dt>Modalidad:</dt><dd>Presencial</dd>
-                <dt>Jornada:</dt><dd>Diurna</dd>
-                <dt>Duración del programa:</dt><dd>10 semestres</dd>
-                <dt>Número de créditos académicos:</dt><dd>178</dd>
-                <dt>Acuerdo de creación:</dt><dd><a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2004/Acuerdo%20016%20-%20Por%20el%20cual%20se%20autoriza%20la%20creacion%20del%20programa%20academico%20de%20Ingenieria%20de%20Sistemas.pdf">Acuerdo 16 del 26 de agosto de 2004</a></dd>
-                <dt>Resolución de registro calificado:</dt><dd><a href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Resolucion%201562%20-%20Registro%20Calificado.pdf">001562 del 16 de febrero de 2022</a></dd>
-                <dt>Código SNIES:</dt><dd>52384</dd>
-                <dt>Lugar de desarrollo:</dt><dd>Florencia, Caquetá. Campus Florencia</dd>
-            </dl>
-        </section>
 
-        <!-- ===== ACORDEÓN de Bootstrap: cada item abre y cierra su contenido ===== -->
-        <section id="informacion" class="accordion">
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1">Propósito de formación del programa</button></h2>
-                <div id="c1" class="accordion-collapse collapse"><div class="accordion-body">
-                    <p>El Programa Ingeniería de Sistemas de la Universidad de la Amazonia tiene como principal propósito desarrollar procesos de formación integral de profesionales de la Ingeniería de Sistemas, mediante un currículo que aborda los conocimientos propios de las ciencias básicas, la ingeniería, el campo tecnológico, investigativo, socio-humanista y de formación complementaria. Esto le permitirá interactuar con su entorno e incidir positivamente en él, mediante la creación, innovación y aplicación de soluciones computacionales soportadas en las Tecnologías de la Información y la Comunicación, que contribuyan al fortalecimiento y progreso económico, social, tecnológico y sustentable de la región Amazónica y el país.</p>
-                </div></div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">Misión y Visión</button></h2>
-                <div id="c2" class="accordion-collapse collapse"><div class="accordion-body">
-                    <h3>Misión</h3>
-                    <p>El programa académico Ingeniería de Sistemas de la Universidad de la Amazonia asume como encargo social la formación de profesionales íntegros, con capacidad para crear, innovar, formular y solucionar problemáticas organizacionales y productivas, apoyados en el desarrollo de sistemas de información soportados en las diferentes tecnologías informáticas, con el propósito de contribuir al desarrollo social, económico y tecnológico de la región amazónica y del país.</p>
-                    <h3>Visión</h3>
-                    <p>Ingeniería de Sistemas será un programa académico en permanente acreditación académica y social, líder en la formación integral de profesionales, competentes en el campo académico, investigativo y humanístico; comprometidos con el desarrollo tecnológico de la región amazónica y del país apoyados en tecnologías de información.</p>
-                </div></div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">Perfil de egreso</button></h2>
-                <div id="c3" class="accordion-collapse collapse"><div class="accordion-body">
-                    <p>El Ingeniero de Sistemas de la Universidad de la Amazonia es un profesional que comprende las dinámicas del entorno, reconociendo las implicaciones y las responsabilidades legales, profesionales, éticas, sociales, económicas y culturales del ejercicio de su profesión. Así mismo, reconoce que la evolución constante de su disciplina y las condiciones cambiantes del entorno hacen necesario implementar estrategias autónomas de aprendizaje continuo, orientados a su perfeccionamiento profesional.</p>
-                </div></div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">Plan de estudios</button></h2>
-                <div id="c4" class="accordion-collapse collapse"><div class="accordion-body">
-                    <p><a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2020/Acuerdo%2044%20Plan%20de%20Estudios%20de%20Ingenieria%20de%20Sistemas.pdf">Acuerdo 44 del 02 de diciembre de 2020</a> - Por el cual se aprueba el nuevo plan de estudios y el plan de transición del programa académico de Ingeniería de Sistemas.</p>
-                </div></div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5">Requisitos</button></h2>
-                <div id="c5" class="accordion-collapse collapse"><div class="accordion-body">
-                    <p><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">Consulta aquí los requisitos de admisión</a>.</p>
-                </div></div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6">Inversión</button></h2>
-                <div id="c6" class="accordion-collapse collapse"><div class="accordion-body">
-                    <ul>
-                        <li><strong>Valor de inscripción:</strong> 8.0% del S.M.M.L.V. <a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20002%20-%20Por%20el%20cual%20se%20fijan%20los%20derechos%20pecuniarios.pdf">Acuerdo 02 del 26 de enero de 2012</a>.</li>
-                        <li><strong>Valor del derecho de matrícula:</strong> <a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20001%20-%20Por%20el%20cual%20se%20establece%20la%20tabla%20de%20matricula%20para%20estudiantes%20de%20pregrado%20presencial.pdf">Acuerdo 01 del 26 de enero de 2012</a>.</li>
-                    </ul>
-                </div></div>
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7">Documentos de interés</button></h2>
-                <div id="c7" class="accordion-collapse collapse"><div class="accordion-body">
-                    <ul>
-                        <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2002/Acuerdo%2019%20-%20Por%20el%20cual%20se%20adopta%20la%20linea%20de%20investigacion%20Sistemas%20de%20Formacion%20Geografica%20para%20la%20facultad%20de%20ingenieria.pdf">Acuerdo No. 019 de 2002 - Línea de Investigación Sistemas de Información Geográfica</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1OjF8Tb43WolUrTwbHwLWE9UDTKP45xVQ?usp=drive_link">Contenidos programáticos pensum 2020</a></li>
-                        <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Formatos%20de%20Opcion%20de%20grado/Opciones%20de%20grado.pdf">Opciones de grado</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/14EBlcWxRo1mfWvUKeTcIXoWUWORG0KUJ?usp=sharing">Formatos de opción de grado</a></li>
-                        <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Sistema%20Integrado%20de%20Gestion%20de%20Calidad/6.%20Procesos/2.%20Misional/Docencia/Procedimientos/7.%20Aprobacion%20de%20opcion%20de%20grado/FO-M-DC-07-03.pdf">Formato notificación opción de grado</a></li>
-                        <li><a href="https://drive.google.com/drive/folders/1IuMu73ZW26iHtAeWZHUp9UXN2dHLfxus?usp=sharing">Protocolo de sustentación y socialización</a></li>
-                        <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/BROCHURE%20INGENIERIA%20DE%20SISTEMAS.pdf">Brochure Ingeniería de Sistemas</a></li>
-                    </ul>
-                </div></div>
-            </div>
-
-            <div class="accordion-item" id="contacto">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8">Contacto</button></h2>
-                <div id="c8" class="accordion-collapse collapse"><div class="accordion-body">
-                    <p><strong>Coordinadora de programa:</strong> Paula Andrea Chica Murcia.</p>
-                    <p><strong>Teléfono:</strong> 320 454 1936.</p>
-                    <p><strong>Correo electrónico:</strong> <a href="mailto:pisistemas@uniamazonia.edu.co">pisistemas@uniamazonia.edu.co</a></p>
-                    <p><strong>Ubicación:</strong> Florencia, Caquetá. Campus Florencia, barrio El Porvenir, bloque administrativo, primer piso.</p>
-                </div></div>
+        <section id="datos" class="contenedor" data-aos="fade-up">
+            <div class="datos">
+                <div class="dato">
+                    <h3>Título que otorga</h3>
+                    <p>Ingeniero de Sistemas</p>
+                </div>
+                <div class="dato">
+                    <h3>Modalidad</h3>
+                    <p>Presencial</p>
+                </div>
+                <div class="dato">
+                    <h3>Jornada</h3>
+                    <p>Diurna</p>
+                </div>
+                <div class="dato">
+                    <h3>Duración del programa</h3>
+                    <p>10 semestres</p>
+                </div>
+                <div class="dato">
+                    <h3>Número de créditos académicos</h3>
+                    <p>178</p>
+                </div>
+                <div class="dato">
+                    <h3>Acuerdo de creación</h3>
+                    <p><a
+                            href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2004/Acuerdo%20016%20-%20Por%20el%20cual%20se%20autoriza%20la%20creacion%20del%20programa%20academico%20de%20Ingenieria%20de%20Sistemas.pdf">Acuerdo
+                            16 del 26 de agosto de 2004</a></p>
+                </div>
+                <div class="dato">
+                    <h3>Resolución de registro calificado</h3>
+                    <p><a
+                            href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Resolucion%201562%20-%20Registro%20Calificado.pdf">001562
+                            del 16 de febrero de 2022</a></p>
+                </div>
+                <div class="dato">
+                    <h3>Código SNIES</h3>
+                    <p>52384</p>
+                </div>
+                <div class="dato">
+                    <h3>Lugar de desarrollo</h3>
+                    <p>Florencia, Caquetá. Campus Florencia</p>
+                </div>
             </div>
         </section>
+
+
+        <div class="banda-tarjetas">
+
+            <section id="informacion">
+                <div id="carruselInfo" class="carousel slide" aria-label="Propósito, misión y visión, perfil de egreso">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+
+                            <div class="diapositiva">
+                                <div class="slide-titulo">
+                                    <h2>Propósito de formación del programa</h2>
+                                </div>
+                                <div class="zigzag" aria-hidden="true"></div>
+                                <div class="slide-texto">
+                                    <p>El Programa Ingeniería de Sistemas de la Universidad de la Amazonia tiene como
+                                        principal propósito desarrollar procesos de formación integral de profesionales
+                                        de la Ingeniería de Sistemas, mediante un currículo que aborda los conocimientos
+                                        propios de las ciencias básicas, la ingeniería, el campo tecnológico,
+                                        investigativo, socio-humanista y de formación complementaria. Esto le permitirá
+                                        interactuar con su entorno e incidir positivamente en él, mediante la creación,
+                                        innovación y aplicación de soluciones computacionales soportadas en las
+                                        Tecnologías de la Información y la Comunicación, que contribuyan al
+                                        fortalecimiento y progreso económico, social, tecnológico y sustentable de la
+                                        región Amazónica y el país.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="diapositiva">
+                                <div class="slide-titulo">
+                                    <h2>Misión y Visión</h2>
+                                </div>
+                                <div class="zigzag" aria-hidden="true"></div>
+                                <div class="slide-texto">
+                                    <h3>Misión</h3>
+                                    <p>El programa académico Ingeniería de Sistemas de la Universidad de la Amazonia
+                                        asume como encargo social la formación de profesionales íntegros, con capacidad
+                                        para crear, innovar, formular y solucionar problemáticas organizacionales y
+                                        productivas, apoyados en el desarrollo de sistemas de información soportados en
+                                        las diferentes tecnologías informáticas, con el propósito de contribuir al
+                                        desarrollo social, económico y tecnológico de la región amazónica y del país.
+                                    </p>
+                                    <h3>Visión</h3>
+                                    <p>Ingeniería de Sistemas será un programa académico en permanente acreditación
+                                        académica y social, líder en la formación integral de profesionales, competentes
+                                        en el campo académico, investigativo y humanístico; comprometidos con el
+                                        desarrollo tecnológico de la región amazónica y del país apoyados en tecnologías
+                                        de información.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+
+                            <div class="diapositiva">
+                                <div class="slide-titulo">
+                                    <h2>Perfil de egreso</h2>
+                                </div>
+                                <div class="zigzag" aria-hidden="true"></div>
+                                <div class="slide-texto">
+                                    <p>El Ingeniero de Sistemas de la Universidad de la Amazonia es un profesional que
+                                        comprende las dinámicas del entorno, reconociendo las implicaciones y las
+                                        responsabilidades legales, profesionales, éticas, sociales, económicas y
+                                        culturales del ejercicio de su profesión. Así mismo, reconoce que la evolución
+                                        constante de su disciplina y las condiciones cambiantes del entorno hacen
+                                        necesario implementar estrategias autónomas de aprendizaje continuo, orientados
+                                        a su perfeccionamiento profesional.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#carruselInfo"
+                            data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="Apartado 1"></button><button type="button" data-bs-target="#carruselInfo"
+                            data-bs-slide-to="1" aria-label="Apartado 2"></button><button type="button"
+                            data-bs-target="#carruselInfo" data-bs-slide-to="2" aria-label="Apartado 3"></button></div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carruselInfo"
+                        data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span
+                            class="visually-hidden">Anterior</span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carruselInfo"
+                        data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span
+                            class="visually-hidden">Siguiente</span></button>
+                </div>
+            </section>
+
+
+            <section id="plan" class="contenedor plan">
+                <h2>Plan de estudios</h2>
+                <div class="resumen">
+                    <div><strong>10</strong>semestres</div>
+                    <div><strong>178</strong>créditos académicos</div>
+                    <div><strong>51</strong>espacios académicos</div>
+                    <div><strong>10</strong>créditos de opción de grado</div>
+                </div>
+                <p class="leyenda" aria-label="Áreas de formación"><span><span
+                            class="punto sh"></span>Socio-Humanística</span><span><span class="punto cb"></span>Ciencias
+                        Básicas</span><span><span class="punto bi"></span>Básica de Ingeniería</span><span><span
+                            class="punto ia"></span>Ingeniería Aplicada</span><span><span class="punto og"></span>Opción
+                        de grado</span></p>
+                <div class="semestres">
+                    <article class="semestre">
+                        <h3>Semestre I<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span
+                                    class="mat">Comunicación</span><b>2</b></li>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Deporte y
+                                    Cultura</span><b>2</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Matemáticas
+                                    I</span><b>3</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Física
+                                    I</span><b>3</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Biología
+                                    General</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span
+                                    class="mat">Introducción a la Ingeniería</span><b>2</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Lógica y
+                                    Algoritmos I</span><b>3</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre II<span>17 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Constitución y
+                                    Democracia</span><b>2</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Matemáticas
+                                    II</span><b>3</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Física
+                                    II</span><b>3</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Química
+                                    I</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Lógica y
+                                    Algoritmos II</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Teoría
+                                    General de Sistemas</span><b>3</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre III<span>17 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Idioma
+                                    Extranjero I</span><b>2</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Álgebra
+                                    Lineal</span><b>3</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Matemática
+                                    Discreta</span><b>4</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Análisis de
+                                    Sistemas</span><b>4</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Estructuras
+                                    de Datos I</span><b>4</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre IV<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Ecuaciones
+                                    Diferenciales</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Estadística
+                                    para Ingeniería</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Ingeniería
+                                    de Software I</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Sistemas
+                                    Operativos</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Estructuras
+                                    de Datos II</span><b>4</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre V<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Idioma
+                                    Extranjero II</span><b>2</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Métodos
+                                    Numéricos</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Ingeniería
+                                    de Software II</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Programación
+                                    Web</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Diseño de
+                                    Base de Datos</span><b>4</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre VI<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Filosofía e
+                                    Historia de la Ciencia</span><b>2</b></li>
+                            <li><span class="punto cb" title="Ciencias Básicas"></span><span class="mat">Modelos
+                                    Determinísticos</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Ingeniería
+                                    de Software III</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Programación
+                                    Móvil</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Redes
+                                    Informáticas I</span><b>4</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre VII<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Metodología
+                                    de la Investigación I</span><b>2</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Proyectos
+                                    Software</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Inteligencia
+                                    Computacional I</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Redes
+                                    Informáticas II</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span
+                                    class="mat">Administración de Base de Datos</span><b>4</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre VIII<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Desarrollo
+                                    Humano</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Metodología
+                                    de la Investigación II</span><b>2</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Planeación
+                                    Estratégica de Sistemas de Información</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Inteligencia
+                                    Computacional II</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Taller de
+                                    Emprendimiento e Innovación</span><b>3</b></li>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span
+                                    class="mat">Ética</span><b>2</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre IX<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto sh" title="Socio-Humanística"></span><span class="mat">Universidad,
+                                    Región y Medio Ambiente</span><b>3</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Gestión
+                                    Tecnológica</span><b>3</b></li>
+                            <li><span class="punto bi" title="Básica de Ingeniería"></span><span class="mat">Taller de
+                                    Escritura Científica</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Electiva
+                                    I</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Electiva
+                                    II</span><b>4</b></li>
+                        </ul>
+                    </article>
+                    <article class="semestre">
+                        <h3>Semestre X<span>18 créditos</span></h3>
+                        <ul>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Electiva
+                                    III</span><b>4</b></li>
+                            <li><span class="punto ia" title="Ingeniería Aplicada"></span><span class="mat">Electiva
+                                    IV</span><b>4</b></li>
+                            <li><span class="punto og" title="Opción de grado"></span><span class="mat">Opción de
+                                    grado</span><b>10</b></li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="nota">Las electivas son de profundización y fortalecen las competencias transversales y
+                    específicas del Ingeniero de Sistemas; se ofertan cada semestre. La opción de grado se rige por el
+                    Acuerdo 019 de 2019 del Consejo Superior o la norma institucional que haga sus veces. Fuente
+                    oficial: <a
+                        href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2020/Acuerdo%2044%20Plan%20de%20Estudios%20de%20Ingenieria%20de%20Sistemas.pdf">Acuerdo
+                        44 de 2020</a>.</p>
+            </section>
+
+            <div class="contenedor">
+                <section id="mas-informacion" class="tarjetas">
+                    <article class="tarjeta">
+                        <h2>Plan de estudios</h2>
+                        <p><a
+                                href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2020/Acuerdo%2044%20Plan%20de%20Estudios%20de%20Ingenieria%20de%20Sistemas.pdf">Acuerdo
+                                44 del 02 de diciembre de 2020</a> - Por el cual se aprueba el nuevo plan de estudios y
+                            el plan de transición del programa académico de Ingeniería de Sistemas.</p>
+                        <p>Mira la malla semestre por semestre en la <a href="#plan">sección Plan de estudios</a>.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h2>Requisitos</h2>
+                        <p><a
+                                href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/dependencias/departamentos/direccion-de-admision-registro-y-control-academico/228-aspirantes.html">Consulta
+                                aquí los requisitos de admisión</a>.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <h2>Inversión</h2>
+                        <ul>
+                            <li><strong>Valor de inscripción:</strong> 8.0% del S.M.M.L.V. <a
+                                    href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20002%20-%20Por%20el%20cual%20se%20fijan%20los%20derechos%20pecuniarios.pdf">Acuerdo
+                                    02 del 26 de enero de 2012</a>.</li>
+                            <li><strong>Valor del derecho de matrícula:</strong> <a
+                                    href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20001%20-%20Por%20el%20cual%20se%20establece%20la%20tabla%20de%20matricula%20para%20estudiantes%20de%20pregrado%20presencial.pdf">Acuerdo
+                                    01 del 26 de enero de 2012</a>.</li>
+                        </ul>
+                    </article>
+                    <article class="tarjeta tarjeta-ancha">
+                        <h2>Documentos de interés</h2>
+                        <ul>
+                            <li><a
+                                    href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2002/Acuerdo%2019%20-%20Por%20el%20cual%20se%20adopta%20la%20linea%20de%20investigacion%20Sistemas%20de%20Formacion%20Geografica%20para%20la%20facultad%20de%20ingenieria.pdf">Acuerdo
+                                    No. 019 de 2002 - Línea de Investigación Sistemas de Información Geográfica</a></li>
+                            <li><a
+                                    href="https://drive.google.com/drive/folders/1OjF8Tb43WolUrTwbHwLWE9UDTKP45xVQ?usp=drive_link">Contenidos
+                                    programáticos pensum 2020</a></li>
+                            <li><a
+                                    href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Formatos%20de%20Opcion%20de%20grado/Opciones%20de%20grado.pdf">Opciones
+                                    de grado</a></li>
+                            <li><a
+                                    href="https://drive.google.com/drive/folders/14EBlcWxRo1mfWvUKeTcIXoWUWORG0KUJ?usp=sharing">Formatos
+                                    de opción de grado</a></li>
+                            <li><a
+                                    href="https://www.uniamazonia.edu.co/documentos/docs/Sistema%20Integrado%20de%20Gestion%20de%20Calidad/6.%20Procesos/2.%20Misional/Docencia/Procedimientos/7.%20Aprobacion%20de%20opcion%20de%20grado/FO-M-DC-07-03.pdf">Formato
+                                    notificación opción de grado</a></li>
+                            <li><a
+                                    href="https://drive.google.com/drive/folders/1IuMu73ZW26iHtAeWZHUp9UXN2dHLfxus?usp=sharing">Protocolo
+                                    de sustentación y socialización</a></li>
+                            <li><a
+                                    href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/BROCHURE%20INGENIERIA%20DE%20SISTEMAS.pdf">Brochure
+                                    Ingeniería de Sistemas</a></li>
+                        </ul>
+                    </article>
+                    <article class="tarjeta" id="contacto">
+                        <h2>Contacto</h2>
+                        <p><strong>Coordinadora de programa:</strong> Paula Andrea Chica Murcia.</p>
+                        <p><strong>Teléfono:</strong> <a href="tel:+573204541936">320 454 1936</a>.</p>
+                        <p><strong>Correo electrónico:</strong> <a
+                                href="mailto:pisistemas@uniamazonia.edu.co">pisistemas@uniamazonia.edu.co</a></p>
+                        <p><strong>Ubicación:</strong> Florencia, Caquetá. Campus Florencia, barrio El Porvenir, bloque
+                            administrativo, primer piso.</p>
+                        <a
+                            href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/presentacion/localizacion-fisica.html"><img
+                                src="./img/mapa.jpg"
+                                alt="Mapa de ubicación de la Universidad de la Amazonia en Florencia, Caquetá"
+                                class="mapa" loading="lazy"></a>
+                    </article>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <!-- ===== PIE DE PÁGINA: grid de 3 columnas (Clase 5) ===== -->
+
     <footer class="pie">
         <div class="contenedor">
             <h2>Universidad de la Amazonia</h2>
@@ -148,30 +446,95 @@
             <div class="pie-grid">
                 <div>
                     <h3>Enlaces de interés</h3>
-                    <p><a href="https://www.uniamazonia.edu.co/documentos/docs/Oficina%20Asesora%20de%20Planeacion/Plan%20de%20Desarrollo%20Institucional/PDI%202020%20-2029.pdf">Plan de Desarrollo Institucional</a></p>
-                    <p><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de privacidad</a></p>
-                    <p><a href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria/ingenieria-de-sistemas.html">Página original del programa</a></p>
+                    <p><a
+                            href="https://www.uniamazonia.edu.co/documentos/docs/Oficina%20Asesora%20de%20Planeacion/Plan%20de%20Desarrollo%20Institucional/PDI%202020%20-2029.pdf">Plan
+                            de Desarrollo Institucional</a></p>
+                    <p><a href="https://www.uniamazonia.edu.co/inicio/index.php/politica-de-privacidad.html">Política de
+                            privacidad</a></p>
+                    <p><a
+                            href="https://www.uniamazonia.edu.co/inicio/index.php/es/programas/pregrado/ingenieria/ingenieria-de-sistemas.html">Página
+                            original del programa</a></p>
                 </div>
                 <div>
                     <h3>Contáctanos</h3>
-                    <p>Sede Porvenir, Calle 17 Diagonal 17 con Carrera 3F, barrio Porvenir. Florencia, Caquetá, Colombia.</p>
+                    <p>Sede Porvenir, Calle 17 Diagonal 17 con Carrera 3F, barrio Porvenir. Florencia, Caquetá,
+                        Colombia.</p>
                     <p>Atención al público: lunes a viernes de 7:30 a.m. a 11:30 a.m. y de 1:30 p.m. a 5:30 p.m.</p>
-                    <p>Correo: <a href="mailto:atencionalciudadano@uniamazonia.edu.co">atencionalciudadano@uniamazonia.edu.co</a></p>
+                    <p>Correo: <a
+                            href="mailto:atencionalciudadano@uniamazonia.edu.co">atencionalciudadano@uniamazonia.edu.co</a>
+                    </p>
                 </div>
                 <div>
                     <h3>Síguenos</h3>
-                    <p><a href="https://www.facebook.com/uniamazonia.edu.co">Facebook</a></p>
-                    <p><a href="https://www.instagram.com/uniamazonia/">Instagram</a></p>
-                    <p><a href="https://www.youtube.com/c/uamazonia">YouTube</a></p>
+                    <p class="redes">
+                        <a href="https://www.facebook.com/uniamazonia.edu.co" target="_blank" rel="noopener"
+                            aria-label="Facebook"><img src="./img/logos/facebook.png" alt="Facebook" width="32"
+                                height="32"></a>
+                        <a href="https://www.instagram.com/uniamazonia/" target="_blank" rel="noopener"
+                            aria-label="Instagram"><img src="./img/logos/instagram.png" alt="Instagram" width="32"
+                                height="32"></a>
+                        <a href="https://x.com/uniamazonia" target="_blank" rel="noopener" aria-label="X (Twitter)"><img
+                                src="./img/logos/x.png" alt="X (Twitter)" width="32" height="32"></a>
+                        <a href="https://www.youtube.com/c/uamazonia" target="_blank" rel="noopener"
+                            aria-label="YouTube"><img src="./img/logos/youtube.png" alt="YouTube" width="32"
+                                height="32"></a>
+                        <a href="https://www.tiktok.com/@uniamazonia" target="_blank" rel="noopener"
+                            aria-label="TikTok"><img src="./img/logos/tiktok.png" alt="TikTok" width="32"
+                                height="32"></a>
+                    </p>
+                    <p>@uniamazonia</p>
                 </div>
             </div>
-            <p class="fuente">Información tomada de la página oficial de la Universidad de la Amazonia, vigilada Ministerio de Educación Nacional.</p>
+
+            <div class="logos">
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/direccion/oficinas/oficina-planeacion.html"
+                    target="_blank" rel="noopener"><img src="./img/logos/iso21001.png" alt="ISO 21001"
+                        loading="lazy"></a>
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/direccion/oficinas/oficina-planeacion.html"
+                    target="_blank" rel="noopener"><img src="./img/logos/iso9001.png" alt="ISO 9001" loading="lazy"></a>
+                <a href="https://www.uniamazonia.edu.co/inicio/index.php/es/la-universidad/direccion/oficinas/oficina-planeacion.html"
+                    target="_blank" rel="noopener"><img src="./img/logos/iqnet.png" alt="IQNet" loading="lazy"></a>
+                <a href="https://www.contraloria.gov.co/" target="_blank" rel="noopener"><img src="./img/logos/cgr.png"
+                        alt="Contraloría General de la República" loading="lazy"></a>
+                <a href="https://portal.icetex.gov.co/Portal/" target="_blank" rel="noopener"><img
+                        src="./img/logos/icetex.png" alt="ICETEX" loading="lazy"></a>
+                <a href="https://www.icfes.gov.co/" target="_blank" rel="noopener"><img src="./img/logos/icfes.png"
+                        alt="ICFES Mejor Saber" loading="lazy"></a>
+                <a href="https://minciencias.gov.co/" target="_blank" rel="noopener"><img
+                        src="./img/logos/minciencias.jpg" alt="Ministerio de Ciencia, Tecnología e Innovación"
+                        loading="lazy"></a>
+                <a href="https://www.graduadoscolombia.edu.co/" target="_blank" rel="noopener"><img
+                        src="./img/logos/observatorio.png" alt="Observatorio Laboral, Graduados Colombia"
+                        loading="lazy"></a>
+                <a href="https://www.procuraduria.gov.co/Pages/Inicio.aspx" target="_blank" rel="noopener"><img
+                        src="./img/logos/procuraduria.png" alt="Procuraduría General de la Nación" loading="lazy"></a>
+                <a href="https://www.urnadecristal.gov.co/" target="_blank" rel="noopener"><img
+                        src="./img/logos/urna.png" alt="Urna de Cristal" loading="lazy"></a>
+                <a href="https://www.prosperidadsocial.gov.co/" target="_blank" rel="noopener"><img
+                        src="./img/logos/jovenes.jpg" alt="Jóvenes en Acción" loading="lazy"></a>
+                <a href="https://www.fodesep.gov.co/" target="_blank" rel="noopener"><img src="./img/logos/fodesep.png"
+                        alt="Fodesep" loading="lazy"></a>
+                <a href="https://agenciapublicadeempleo.sena.edu.co/Paginas/inicio.aspx" target="_blank"
+                    rel="noopener"><img src="./img/logos/empleo.png" alt="Agencia Pública de Empleo del SENA"
+                        loading="lazy"></a>
+                <a href="https://www.gov.co/" target="_blank" rel="noopener"><img src="./img/logos/govco.png"
+                        alt="GOV.CO" loading="lazy"></a>
+                <a href="https://www.mineducacion.gov.co/portal/" target="_blank" rel="noopener"><img
+                        src="./img/logos/mineducacion.png" alt="Ministerio de Educación Nacional" loading="lazy"></a>
+                <a href="https://www.colombia.co/" target="_blank" rel="noopener"><img src="./img/logos/colombia.png"
+                        alt="Marca país Colombia" loading="lazy"></a>
+            </div>
+            <p class="creditos">Entregable 1 · Programación Web 2026-II <!-- Escribe aquí tu nombre --></p>
         </div>
     </footer>
 
+    <a href="#inicio" class="subir" aria-label="Volver arriba">↑</a>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
+
 </html>
